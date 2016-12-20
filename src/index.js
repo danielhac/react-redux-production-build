@@ -1,8 +1,11 @@
+/*eslint-disable import/default */
+// Code above to avoid ESLint issues
+
 import 'babel-polyfill'; // Some features in ES6 that Babel cannot transpile, thus polyfill
 import React from 'react'; // To use React
 import { render } from 'react-dom'; // To allow render function working in browser
 
-import configureStore from './store/configureStore';
+import configureStore from './store/configureStore.dev';
 import {Provider} from 'react-redux'; // higher order component that attaches our store to React container components
 
 import { Router, browserHistory } from 'react-router'; // Router: needed as coded in render below - browserHistory: clean urls
